@@ -1,7 +1,8 @@
 <script setup>
-
+import { useRoute } from 'vue-router'
+    const route = useRoute()
 </script> 
 
 <template>
-    CardDetail Page
+   {{ route.params.id }}
 </template>
